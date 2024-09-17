@@ -1,0 +1,559 @@
+/* My CSS */
+body {
+  font-family: "Roboto", sans-serif;
+  margin-top: 90px;
+  background-color: whitesmoke;
+}
+
+/* Navbar */
+.navbar {
+  background-color: whitesmoke !important;
+  border-bottom: 2px solid #e3e3e2;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  transition: 0.6s;
+}
+
+nav.sticky {
+  background-color: #ffffff !important;
+  transition: 0.6s;
+  border-bottom: none;
+  padding-top: 10px;
+  padding-bottom: 0;
+}
+
+.navbar-nav .nav-item {
+  margin-left: 30px;
+}
+
+.navbar-nav .nav-item .nav-link {
+  font-size: 17px;
+}
+
+.navbar-nav .nav-item .active {
+  color: #42d680;
+}
+
+.navbar .navbar-brand .text {
+  color: black;
+  line-height: 50px;
+  font-weight: 500;
+}
+
+.navbar .navbar-brand .text:hover {
+  color: #3bcc84;
+  transition: 0.3s;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: #3bcc84;
+}
+
+.navbar-nav .nav-item a {
+  position: relative;
+  letter-spacing: 0.5px;
+  padding: auto;
+  font-weight: 800;
+}
+
+.navbar-nav .nav-item-btn a {
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  /* color: rgba(0, 0, 0, 0.65); */
+  color: whitesmoke;
+  font-size: 17px;
+}
+
+.navbar-nav .btn {
+  background-color: transparent !important;
+  background-image: linear-gradient(135deg, #149795 0%, #3bcc84 100%);
+  border-color: white;
+}
+
+.navbar-nav .btn:hover {
+  background-color: transparent;
+  border-color: transparent;
+  background-image: linear-gradient(135deg, #42d680 0%, #0f8f98 80%);
+  color: rgba(0, 0, 0, 0.65);
+  transition: 0.5s;
+}
+
+.navbar-nav .nav-item a::after {
+  content: "";
+  position: absolute;
+  background-color: #42d680;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: 0px;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.navbar-nav .nav-item a:hover::after {
+  width: 100%;
+}
+/* end navbar */
+
+/* section 1 welcome home */
+.section-1-welcome .text-welcome {
+  background-color: transparent !important;
+  background-image: linear-gradient(135deg, #149795 0%, #3bcc84 100%);
+  width: 135px;
+  height: 30px;
+  border-radius: 15px 15px 15px 15px;
+}
+
+.section-1-welcome .text-welcome p {
+  font-size: 15px;
+  text-align: center;
+  padding-top: 4px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.section-1-welcome .judul-welcome h3 {
+  color: black;
+  font-size: 40px;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.section-1-welcome .link-more .btn-primary {
+  background-color: transparent;
+  background-image: linear-gradient(135deg, #0f8f98 0%, #42d680 60%);
+  border-color: transparent;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  width: 200px;
+  line-height: 30px;
+  font-size: 13px;
+}
+
+.section-1-welcome .link-more .btn:hover {
+  background-color: transparent;
+  border-color: transparent;
+  background-image: linear-gradient(135deg, #42d680 0%, #0f8f98 80%);
+  color: white;
+  transition: 0.5s;
+}
+
+.section-1-welcome .link-more a {
+  text-align: center;
+}
+
+/* end section welcome home */
+
+/* start section our visi misi */
+.section-2-visi-misi .who-are-we h4 {
+  font-size: 14px;
+  color: #42d680;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.section-2-visi-misi h2 {
+  color: black;
+  font-size: 39px;
+  font-weight: 800;
+  line-height: 1.2em;
+}
+
+.section-2-visi-misi .isi-misi i {
+  color: #42d680;
+}
+
+.section-2-visi-misi .mgri {
+  margin-right: 270px;
+}
+/* end section our visi misi */
+
+/* start section our program kerja */
+.section-3-our-proker .our-program h4 {
+  font-size: 14px;
+  color: #42d680;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.section-3-our-proker h2 {
+  color: black;
+  font-size: 39px;
+  font-weight: 800;
+  line-height: 1.2em;
+}
+
+.section-3-our-proker .isi-our-program .card {
+  box-shadow: 5px 5px 10px black;
+  overflow: hidden;
+}
+
+.section-3-our-proker .isi-our-program .card img {
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.section-3-our-proker .isi-our-program .isi-card {
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  background: rgb(27, 27, 27, 0.5);
+  height: 40px;
+  transition: 0.5s;
+}
+
+.section-3-our-proker .isi-our-program .isi-card h3 {
+  color: white;
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: none;
+  line-height: 1.3em;
+  font-style: normal;
+  letter-spacing: -0.5px;
+}
+
+.section-3-our-proker .isi-our-program .isi-card p {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: none;
+  line-height: 1.5em;
+  font-style: normal;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.section-3-our-proker .isi-our-program .card:hover {
+  cursor: pointer;
+}
+
+.section-3-our-proker .isi-our-program .card:hover .isi-card {
+  background: black;
+  opacity: 70%;
+  top: 170px;
+  height: 160px;
+}
+
+.section-3-our-proker .isi-our-program .card:hover p {
+  opacity: 1;
+  visibility: visible;
+}
+
+.section-3-our-proker .isi-our-program .card:hover img {
+  transform: scale(1.1) rotate(-3deg);
+}
+
+/* end section our program kerja */
+
+/* start section list article */
+
+.section4-list-article {
+  background-image: url(../img/bg_header_.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 900px;
+}
+
+.section4-list-article h4 {
+  font-size: 14px;
+  color: #42d680;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.section4-list-article h2 {
+  color: black;
+  font-size: 39px;
+  font-weight: 800;
+  line-height: 1.2em;
+}
+
+.mrgtop {
+  margin-top: 10em;
+}
+
+.section4-list-article .pdgtop {
+  padding-top: 10em;
+}
+
+.section4-list-article a {
+  text-decoration: none;
+  color: black;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.section4-list-article a:hover {
+  color: #42d680;
+}
+
+.section4-list-article h2 {
+  color: inherit;
+  font-size: 22px;
+  line-height: inherit;
+}
+
+.section4-list-article p {
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.section4-list-article .learn-more .btn-primary {
+  background-color: transparent;
+  background-image: linear-gradient(135deg, #0f8f98 0%, #42d680 60%);
+  border-color: transparent;
+  color: white;
+  width: 170px;
+  line-height: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 12px;
+}
+
+.section4-list-article .learn-more .btn-primary:hover {
+  background-color: transparent;
+  border-color: transparent;
+  background-image: linear-gradient(135deg, #42d680 0%, #0f8f98 80%);
+  transition: 0.5s;
+}
+/* end section list article */
+
+/* start section contact us */
+.section-5-contact-us {
+  background-image: url(../img/FEB-UI.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 500px;
+  position: relative;
+}
+
+.back-overlay {
+  background-color: #3b3664;
+  opacity: 0.5;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.text-contact-us {
+  position: relative;
+}
+
+.text-contact-us h2 {
+  color: white;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.2em;
+}
+
+.section-5-contact-us .link-contact-us .btn-primary {
+  background-color: transparent;
+  background-image: linear-gradient(135deg, #0f8f98 0%, #42d680 60%);
+  border-color: transparent;
+  color: white;
+  width: 170px;
+  line-height: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 12px;
+  position: relative;
+}
+
+.section-5-contact-us .link-contact-us .btn-primary:hover {
+  background-color: transparent;
+  border-color: transparent;
+  background-image: linear-gradient(135deg, #42d680 0%, #0f8f98 80%);
+  transition: 0.5s;
+}
+/* end section contact us */
+
+/* footer */
+.footer h5 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.4em;
+  letter-spacing: normal;
+}
+
+.footer a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  line-height: 1.5em;
+  font-weight: 400;
+}
+
+.footer p {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  line-height: 1.5em;
+  font-weight: 400;
+}
+
+.footer a:hover {
+  color: #42d680;
+}
+
+.space-devider {
+  border-bottom: 1px solid black;
+  opacity: 20%;
+}
+/* end footer */
+
+/* media responsive */
+@media (max-width: 576px) {
+  .arrow {
+    display: none;
+  }
+
+  /* section navbar */
+  .navbar .show {
+    min-height: 63px !important;
+  }
+
+  .navbar .pe-5,
+  .me-5 {
+    padding-right: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .navbar .nav-item-btn {
+    padding-top: 10px !important;
+    margin: auto !important;
+  }
+  /* end section navbar */
+
+  /* section1 welcome */
+  .section-1-welcome .text-welcome {
+    margin: auto;
+  }
+
+  .section-1-welcome .text-welcome p {
+    font-size: 11px;
+    line-height: 2em;
+  }
+
+  .section-1-welcome .judul-welcome,
+  .isi-judul {
+    text-align: center;
+  }
+
+  .section-1-welcome .judul-welcome span {
+    display: block;
+  }
+
+  .section-1-welcome .link-more {
+    text-align: center;
+  }
+  /* end section1 welcome */
+
+  /* Section 2 misi visi */
+  .section-2-visi-misi .who-are-we,
+  .judul-visi,
+  .isi-visi,
+  .judul-misi {
+    text-align: center;
+  }
+
+  .section-2-visi-misi .judul-misi {
+    margin-top: 20px;
+  }
+
+  .section-2-visi-misi .isi-misi .col-md-1,
+  .col-md-2 {
+    display: none;
+  }
+
+  .section-2-visi-misi .isi-misi {
+    text-align: center;
+  }
+
+  .section-2-visi-misi .isi-misi p::before {
+    content: "";
+    vertical-align: -0.125em;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%2342d680' class='bi bi-check-lg' viewBox='0 0 16 16'%3E%3Cpath d='M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z'/%3E%3C/svg%3E");
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 24px;
+  }
+
+  .section-2-visi-misi .isi-misi img {
+    display: none !important;
+  }
+  /* end Section 2 misi visi */
+
+  /* start Section 3 proker kita */
+  .section-3-our-proker {
+    margin-top: 60px;
+    text-align: center;
+    padding: auto;
+    margin: auto;
+  }
+
+  .section-3-our-proker .isi-our-program .card {
+    padding: auto;
+    margin: auto;
+  }
+
+  .section-3-our-proker .isi-our-program .pdtp {
+    padding-top: 50px !important;
+  }
+  /* end Section 3 proker kita */
+
+  /* start Section 4 list article */
+
+  .section4-list-article {
+  }
+
+  .section4-list-article .isi-article {
+  }
+
+  .section4-list-article .isi-article .card {
+    width: 20rem !important;
+    padding: auto;
+    margin: auto;
+    margin-top: 25px !important;
+  }
+  /* end Section 4 list article */
+
+  /* start section 5 contact us */
+
+  .section-5-contact-us {
+    margin-top: 50px;
+  }
+
+  .section-5-contact-us .contact-us .text-contact-us h2 {
+    font-size: 25px;
+  }
+  /* end section 5 contact us */
+
+  /* start footer */
+  .footer {
+    text-align: center !important;
+  }
+
+  .footer .ps-5 {
+    padding-left: 0 !important;
+  }
+
+  .footer .pdtp {
+    padding-top: 25px !important;
+  }
+
+  .footer .text-end {
+    text-align: center !important;
+  }
+  /* end footer */
+}
