@@ -1,4 +1,20 @@
 /* My CSS */
+
+:root {
+  --judul-color: black;
+  --judul-font-size: 39px;
+  --judul-font-weight: 800;
+  --judul-line-height: 1.2em;
+  --judul-tengah-size: 25px;
+  --judul-isi-color: white;
+  --judul-isi-font-size: 20px;
+  --judul-isi-font-weight: 400;
+  --judul-isi-line-height: 1.3em;
+  --isi-font-size: 14px;
+  --isi-font-weight: 400;
+  --isi-line-height: 1.5em;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   margin-top: 90px;
@@ -247,6 +263,25 @@ nav.sticky {
   transform: scale(1.1) rotate(-3deg);
 }
 
+.section-3-our-proker .learn-more .btn-primary {
+  background-color: transparent;
+  background-image: linear-gradient(135deg, #0f8f98 0%, #42d680 60%);
+  border-color: transparent;
+  color: white;
+  width: 150px;
+  line-height: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 12px;
+}
+
+.section-3-our-proker .learn-more .btn-primary:hover {
+  background-color: transparent;
+  border-color: transparent;
+  background-image: linear-gradient(135deg, #42d680 0%, #0f8f98 80%);
+  transition: 0.5s;
+}
+
 /* end section our program kerja */
 
 /* start section list article */
@@ -275,11 +310,11 @@ nav.sticky {
 }
 
 .mrgtop {
-  margin-top: 10em;
+  margin-top: 7em;
 }
 
 .section4-list-article .pdgtop {
-  padding-top: 10em;
+  padding-top: 7em;
 }
 
 .section4-list-article a {
@@ -422,6 +457,10 @@ nav.sticky {
     min-height: 63px !important;
   }
 
+  .navbar-nav .nav-item a:hover::after {
+    width: 20%;
+  }
+
   .navbar .pe-5,
   .me-5 {
     padding-right: 0 !important;
@@ -470,23 +509,8 @@ nav.sticky {
     margin-top: 20px;
   }
 
-  .section-2-visi-misi .isi-misi .col-md-1,
-  .col-md-2 {
-    display: none;
-  }
-
   .section-2-visi-misi .isi-misi {
-    text-align: center;
-  }
-
-  .section-2-visi-misi .isi-misi p::before {
-    content: "";
-    vertical-align: -0.125em;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%2342d680' class='bi bi-check-lg' viewBox='0 0 16 16'%3E%3Cpath d='M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z'/%3E%3C/svg%3E");
-    background-size: 16px 16px;
-    background-repeat: no-repeat;
-    background-position: left center;
-    padding-left: 24px;
+    text-align: left;
   }
 
   .section-2-visi-misi .isi-misi img {
@@ -514,10 +538,16 @@ nav.sticky {
 
   /* start Section 4 list article */
 
-  .section4-list-article {
+  .section4-list-article .pdgtop {
+    padding-top: 70px !important;
   }
 
-  .section4-list-article .isi-article {
+  .section4-list-article .isi-article .pe-5 {
+    padding-right: 0 !important;
+  }
+
+  .section4-list-article .isi-article .like-article {
+    text-align: left !important;
   }
 
   .section4-list-article .isi-article .card {
@@ -557,3 +587,302 @@ nav.sticky {
   }
   /* end footer */
 }
+
+/* profil atau about */
+
+/* section1 about us */
+.section-1-about .judul-about h1 {
+  font-size: 48px;
+  line-height: 57.6px;
+  letter-spacing: normal;
+  font-weight: bold;
+}
+
+.section-1-about .isi-judul-about p {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: normal;
+}
+/* end section1 about us */
+
+/* section2 visi dan misi */
+
+/* end section2 visi dan misi */
+
+/* section3 our values */
+.js3 {
+  margin-top: 150px;
+}
+
+.section-3-our-values {
+  background-image: url(../img/bg_header_.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 1100px;
+  border-radius: 60px;
+}
+
+.section-3-our-values .judul-our-values h4 {
+  color: var(--judul-color);
+  font-size: var(--judul-font-size);
+  line-height: var(--judul-line-height);
+  font-weight: var(--judul-font-weight);
+}
+
+.section-3-our-values .card {
+  border-radius: 15px;
+  margin-top: 25px;
+}
+
+.section-3-our-values .card-container {
+  width: 100%;
+  height: 250px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  cursor: pointer;
+}
+
+.section-3-our-values .card-front,
+.card-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.9s ease;
+}
+
+.section-3-our-values .card-front {
+  background: linear-gradient(180deg, #0f8f98 0%, #42d680 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.section-3-our-values .card-front img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.section-3-our-values .card-front h2 {
+  font-size: var(--judul-isi-font-size);
+  line-height: var(--judul-isi-line-height);
+  font-weight: 600;
+  margin: 0;
+}
+
+.section-3-our-values .card-back {
+  background: rgba(255, 255, 255, 0.95);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transform: translateY(100%);
+}
+
+.section-3-our-values .card-back h2 {
+  font-size: var(--judul-isi-font-size);
+  line-height: var(--judul-isi-line-height);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.section-3-our-values .card-back p {
+  font-size: var(--isi-font-size);
+  line-height: var(--isi-line-height);
+  font-weight: var(--isi-font-weight);
+  color: #333;
+  padding: 0 15px;
+}
+
+.section-3-our-values .card-container:hover .card-front {
+  transform: translateY(-100%);
+}
+
+.section-3-our-values .card-container:hover .card-back {
+  transform: translateY(0);
+}
+
+/* end section3 our values */
+
+/* start section4 our team */
+.section-4-our-team {
+  background-color: #3b3664;
+  opacity: 0.9;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 4100px;
+  border-radius: 30px;
+}
+
+.section-4-our-team .judul-our-team h4 {
+  color: white;
+  font-size: var(--judul-font-size);
+  line-height: var(--judul-line-height);
+  font-weight: var(--judul-font-weight);
+}
+
+.section-4-our-team .judul-our-team h5 {
+  color: white;
+  font-size: var(--judul-tengah-size);
+  line-height: var(--judul-line-height);
+  font-weight: var(--judul-font-weight);
+}
+
+.section-4-our-team .card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  /* margin: 20px; */
+  overflow: hidden;
+  box-shadow: 0 30px 30px -20px rgba(0, 0, 0, 1),
+    inset 0 0 0 1000px rgba(67, 52, 109, 0.6);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  margin-top: 35px;
+}
+
+.section-4-our-team .card .imbBx,
+.imbBx img {
+  width: 100%;
+  height: 100%;
+}
+
+.section-4-our-team .card .content {
+  position: absolute;
+  bottom: -160px;
+  width: 100%;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  transition: bottom 0.5s;
+  transition-delay: 0.65s;
+}
+
+.section-4-our-team .card:hover .content {
+  bottom: 0;
+  transition-delay: 0s;
+}
+
+.section-4-our-team .content .contentBx h3 {
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  margin: 20px 0 15px;
+  line-height: 1.1em;
+  transition: 0.5s;
+  transition-delay: 0.6s;
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.section-4-our-team .card:hover .content .contentBx h3 {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.section-4-our-team .content .contentBx h3 span {
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: initial;
+}
+
+.section-4-our-team .content .sci {
+  position: relative;
+  bottom: 10px;
+  display: flex;
+}
+
+.section-4-our-team .content ul {
+  padding-left: 0 !important;
+}
+
+.section-4-our-team .content .sci li {
+  list-style: none;
+  margin: 0 10px;
+  transform: translateY(40px);
+  transition: 0.5s;
+  opacity: 0;
+  transition-delay: calc(0.2s * var(--i));
+}
+
+.section-4-our-team .card:hover .content .sci li {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.section-4-our-team .content .sci li a {
+  color: #fff;
+  font-size: 24px;
+}
+/* end section4 our team */
+
+/* start section5 our devisi */
+
+.section-5-our-devisi {
+  background: transparent;
+  background-image: linear-gradient(180deg, #f0ff0429 0%, #ffffff 7%);
+  border-radius: 30px;
+  min-height: 350vh;
+}
+
+.section-5-our-devisi .card {
+  width: 35rem;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  /* padding-bottom: 20px; */
+  border-radius: 20px;
+}
+
+.section-5-our-devisi .card img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.section-5-our-devisi .learn-more .btn-primary {
+  background-color: transparent;
+  background-image: linear-gradient(135deg, #0f8f98 0%, #42d680 60%);
+  border-color: transparent;
+  color: white;
+  width: 150px;
+  line-height: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 12px;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+.section-5-our-devisi .learn-more .btn-primary:hover {
+  background-color: transparent;
+  border-color: transparent;
+  background-image: linear-gradient(135deg, #42d680 0%, #0f8f98 80%);
+  transition: 0.5s;
+}
+/* end section5 our devisi */
