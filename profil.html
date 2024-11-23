@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HMPS Informatika</title>
+
+    <!-- link swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <!-- Font family roboto -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -206,10 +213,10 @@
             <div class="pt-5"></div>
             <h4>Our Values</h4>
           </div>
-          <div class="isi-our-values">
-            <div class="row">
-              <div class="col-lg-6 d-flex justify-content-center">
-                <div class="card" style="width: 35rem">
+          <div class="isi-our-values swiper">
+            <div class="slider-wrapper">
+              <div class="swiper-wrapper">
+                <div class="card swiper-slide" style="width: 35rem">
                   <div class="card-container">
                     <div class="card-front">
                       <img src="https://via.placeholder.com/50" alt="Icon" />
@@ -225,9 +232,8 @@
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-lg-6 d-flex justify-content-center">
-                <div class="card" style="width: 35rem">
+
+                <div class="card swiper-slide" style="width: 35rem">
                   <div class="card-container">
                     <div class="card-front">
                       <img src="https://via.placeholder.com/50" alt="Icon" />
@@ -243,9 +249,8 @@
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-lg-6 d-flex justify-content-center">
-                <div class="card" style="width: 35rem">
+
+                <div class="card swiper-slide" style="width: 35rem">
                   <div class="card-container">
                     <div class="card-front">
                       <img src="https://via.placeholder.com/50" alt="Icon" />
@@ -261,9 +266,8 @@
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-lg-6 d-flex justify-content-center">
-                <div class="card" style="width: 35rem">
+
+                <div class="card swiper-slide" style="width: 35rem">
                   <div class="card-container">
                     <div class="card-front">
                       <img src="https://via.placeholder.com/50" alt="Icon" />
@@ -279,9 +283,8 @@
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-lg-6 d-flex justify-content-center">
-                <div class="card" style="width: 35rem">
+
+                <div class="card swiper-slide" style="width: 35rem">
                   <div class="card-container">
                     <div class="card-front">
                       <img src="https://via.placeholder.com/50" alt="Icon" />
@@ -297,9 +300,8 @@
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-lg-6 d-flex justify-content-center">
-                <div class="card" style="width: 35rem">
+
+                <div class="card swiper-slide" style="width: 35rem">
                   <div class="card-container">
                     <div class="card-front">
                       <img src="https://via.placeholder.com/50" alt="Icon" />
@@ -317,6 +319,15 @@
                 </div>
               </div>
             </div>
+
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-slide-button swiper-button-prev"></div>
+            <div class="swiper-slide-button swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
           </div>
         </div>
       </div>
@@ -1047,11 +1058,17 @@
     </footer>
     <!-- end footer -->
 
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
+    <script src="js/script.js"></script>
+
     <script type="text/javascript">
       window.addEventListener("scroll", function () {
         var header = document.querySelector("nav");

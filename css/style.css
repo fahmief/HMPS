@@ -446,148 +446,6 @@ nav.sticky {
 }
 /* end footer */
 
-/* media responsive */
-@media (max-width: 576px) {
-  .arrow {
-    display: none;
-  }
-
-  /* section navbar */
-  .navbar .show {
-    min-height: 63px !important;
-  }
-
-  .navbar-nav .nav-item a:hover::after {
-    width: 20%;
-  }
-
-  .navbar .pe-5,
-  .me-5 {
-    padding-right: 0 !important;
-    margin-right: 0 !important;
-  }
-
-  .navbar .nav-item-btn {
-    padding-top: 10px !important;
-    margin: auto !important;
-  }
-  /* end section navbar */
-
-  /* section1 welcome */
-  .section-1-welcome .text-welcome {
-    margin: auto;
-  }
-
-  .section-1-welcome .text-welcome p {
-    font-size: 11px;
-    line-height: 2em;
-  }
-
-  .section-1-welcome .judul-welcome,
-  .isi-judul {
-    text-align: center;
-  }
-
-  .section-1-welcome .judul-welcome span {
-    display: block;
-  }
-
-  .section-1-welcome .link-more {
-    text-align: center;
-  }
-  /* end section1 welcome */
-
-  /* Section 2 misi visi */
-  .section-2-visi-misi .who-are-we,
-  .judul-visi,
-  .isi-visi,
-  .judul-misi {
-    text-align: center;
-  }
-
-  .section-2-visi-misi .judul-misi {
-    margin-top: 20px;
-  }
-
-  .section-2-visi-misi .isi-misi {
-    text-align: left;
-  }
-
-  .section-2-visi-misi .isi-misi img {
-    display: none !important;
-  }
-  /* end Section 2 misi visi */
-
-  /* start Section 3 proker kita */
-  .section-3-our-proker {
-    margin-top: 60px;
-    text-align: center;
-    padding: auto;
-    margin: auto;
-  }
-
-  .section-3-our-proker .isi-our-program .card {
-    padding: auto;
-    margin: auto;
-  }
-
-  .section-3-our-proker .isi-our-program .pdtp {
-    padding-top: 50px !important;
-  }
-  /* end Section 3 proker kita */
-
-  /* start Section 4 list article */
-
-  .section4-list-article .pdgtop {
-    padding-top: 70px !important;
-  }
-
-  .section4-list-article .isi-article .pe-5 {
-    padding-right: 0 !important;
-  }
-
-  .section4-list-article .isi-article .like-article {
-    text-align: left !important;
-  }
-
-  .section4-list-article .isi-article .card {
-    width: 20rem !important;
-    padding: auto;
-    margin: auto;
-    margin-top: 25px !important;
-  }
-  /* end Section 4 list article */
-
-  /* start section 5 contact us */
-
-  .section-5-contact-us {
-    margin-top: 50px;
-  }
-
-  .section-5-contact-us .contact-us .text-contact-us h2 {
-    font-size: 25px;
-  }
-  /* end section 5 contact us */
-
-  /* start footer */
-  .footer {
-    text-align: center !important;
-  }
-
-  .footer .ps-5 {
-    padding-left: 0 !important;
-  }
-
-  .footer .pdtp {
-    padding-top: 25px !important;
-  }
-
-  .footer .text-end {
-    text-align: center !important;
-  }
-  /* end footer */
-}
-
 /* profil atau about */
 
 /* section1 about us */
@@ -633,6 +491,7 @@ nav.sticky {
 .section-3-our-values .card {
   border-radius: 15px;
   margin-top: 25px;
+  user-select: none;
 }
 
 .section-3-our-values .card-container {
@@ -886,3 +745,183 @@ nav.sticky {
   transition: 0.5s;
 }
 /* end section5 our devisi */
+
+/* .swiper {
+  width: 600px;
+  height: 300px;
+} */
+
+.slider-wrapper {
+  overflow: hidden;
+  max-width: 1200px;
+  margin: 0 70px 55px;
+}
+
+.swiper-pagination-bullet {
+  background: linear-gradient(135deg, #0f8f98 0%, #42d680 60%);
+  height: 10px !important;
+  width: 10px !important;
+}
+
+.swiper-slide-button {
+  color: #0f8f98;
+  margin-top: -40px;
+  transition: 0.2s ease;
+}
+
+.swiper-slide-button:hover {
+  color: #42d680;
+}
+
+/* media responsive */
+@media (max-width: 768px) {
+  .arrow {
+    display: none;
+  }
+
+  /* section navbar */
+  .navbar .show {
+    min-height: 63px !important;
+  }
+
+  .navbar-nav .nav-item a:hover::after {
+    width: 20%;
+  }
+
+  .navbar .pe-5,
+  .me-5 {
+    padding-right: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .navbar .nav-item-btn {
+    padding-top: 10px !important;
+    margin: auto !important;
+  }
+  /* end section navbar */
+
+  /* section1 welcome */
+  .section-1-welcome .text-welcome {
+    margin: auto;
+  }
+
+  .section-1-welcome .text-welcome p {
+    font-size: 11px;
+    line-height: 2em;
+  }
+
+  .section-1-welcome .judul-welcome,
+  .isi-judul {
+    text-align: center;
+  }
+
+  .section-1-welcome .judul-welcome span {
+    display: block;
+  }
+
+  .section-1-welcome .link-more {
+    text-align: center;
+  }
+  /* end section1 welcome */
+
+  /* Section 2 misi visi */
+  .section-2-visi-misi .who-are-we,
+  .judul-visi,
+  .isi-visi,
+  .judul-misi {
+    text-align: center;
+  }
+
+  .section-2-visi-misi .judul-misi {
+    margin-top: 20px;
+  }
+
+  .section-2-visi-misi .isi-misi {
+    text-align: left;
+  }
+
+  .section-2-visi-misi .isi-misi img {
+    display: none !important;
+  }
+  /* end Section 2 misi visi */
+
+  /* start Section 3 proker kita */
+  .section-3-our-proker {
+    margin-top: 60px;
+    text-align: center;
+    padding: auto;
+    margin: auto;
+  }
+
+  .section-3-our-proker .isi-our-program .card {
+    padding: auto;
+    margin: auto;
+  }
+
+  .section-3-our-proker .isi-our-program .pdtp {
+    padding-top: 50px !important;
+  }
+  /* end Section 3 proker kita */
+
+  /* start Section 4 list article */
+
+  .section4-list-article .pdgtop {
+    padding-top: 70px !important;
+  }
+
+  .section4-list-article .isi-article .pe-5 {
+    padding-right: 0 !important;
+  }
+
+  .section4-list-article .isi-article .like-article {
+    text-align: left !important;
+  }
+
+  .section4-list-article .isi-article .card {
+    width: 20rem !important;
+    padding: auto;
+    margin: auto;
+    margin-top: 25px !important;
+  }
+  /* end Section 4 list article */
+
+  /* start section 5 contact us */
+
+  .section-5-contact-us {
+    margin-top: 50px;
+  }
+
+  .section-5-contact-us .contact-us .text-contact-us h2 {
+    font-size: 25px;
+  }
+  /* end section 5 contact us */
+
+  /* start footer */
+  .footer {
+    text-align: center !important;
+  }
+
+  .footer .ps-5 {
+    padding-left: 0 !important;
+  }
+
+  .footer .pdtp {
+    padding-top: 25px !important;
+  }
+
+  .footer .text-end {
+    text-align: center !important;
+  }
+  /* end footer */
+
+  /* pages about atau profik */
+  /* our values */
+  .slider-wrapper {
+    margin: 0 10px 40px;
+  }
+
+  .swiper-slide-button {
+    display: none;
+  }
+  /* end our values */
+}
