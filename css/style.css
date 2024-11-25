@@ -477,7 +477,7 @@ nav.sticky {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 1100px;
+  min-height: 700px;
   border-radius: 60px;
 }
 
@@ -600,7 +600,7 @@ nav.sticky {
 .section-4-our-team .card {
   position: relative;
   width: 300px;
-  height: 400px;
+  height: 300px;
   /* margin: 20px; */
   overflow: hidden;
   box-shadow: 0 30px 30px -20px rgba(0, 0, 0, 1),
@@ -746,12 +746,13 @@ nav.sticky {
 }
 /* end section5 our devisi */
 
-/* .swiper {
-  width: 600px;
-  height: 300px;
-} */
-
 .slider-wrapper {
+  overflow: hidden;
+  max-width: 1200px;
+  margin: 0 70px 55px;
+}
+
+.slider-wrapper2 {
   overflow: hidden;
   max-width: 1200px;
   margin: 0 70px 55px;
